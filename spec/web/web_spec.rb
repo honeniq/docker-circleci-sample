@@ -14,7 +14,7 @@ describe "nginx" do
   end
 
   describe file("/usr/share/nginx/html/index.html") do
-    its(:content) { should match /Welcome to Chubo Deshita\? container/ }
+    its(:content) { should match /老舗の鯛焼き/ }
     its(:content) { should_not match /Welcome to nginx/ }
   end
 
