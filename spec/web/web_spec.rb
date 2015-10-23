@@ -18,7 +18,7 @@ describe "nginx" do
     its(:content) { should_not match /Welcome to nginx/ }
   end
 
-  describe file('/usr/share/nginx/html/whale.png') do
+  describe file('/usr/share/nginx/html/tai.png') do
     it { should be_file }
   end
 end
