@@ -1,20 +1,105 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<title>Welcome to Chubo Deshita? container!!</title>
+<meta charset="utf-8">
+<title>厨房でした</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+
 <style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
+
+/* reset
+-------------------------------------------------- */
+body, p, h2{
+	margin: 0;
+	padding: 0;
+}
+
+/* 幅を制御する
+-------------------------------------------------- */
+.width-keeper{
+	/* 中央寄せ */
+	margin-left:auto;
+	margin-right:auto;
+	
+	/* 最大幅をつけて PC でも見やすくする（無くても良い） */
+	max-width: 640px;
+}
+
+/* コンテンツ
+-------------------------------------------------- */
+.header{
+	background:url("./seigaiha.gif") top center repeat-x;
+	height:100px;
+	background-size:contain;
+	-webkit-background-size:auto 100px;
+	color:#FFF;
+}
+
+.contents{
+	margin-top: 20px;
+}
+	.contents .container{
+		margin:0 15px;
+		padding:10px;
+		background-color:#FFF;
+		border-radius:6px;
+	}
+
+
+.footer{
+	margin-top: 20px;
+	background-color:#23576e;
+	height:60px;
+	color:#FFF;
+}
+
+.copyright{
+	padding-top:20px;
+	text-align:center;
+}
+
 </style>
+
 </head>
+
 <body>
-<h1>Welcome to Chubo Deshita? container!!</h1>
 
-<img src="whale.png">
+<div class="header">
+<div class="container width-keeper">
 
-<p><em>Thank you for using nginx.</em></p>
+
+</div><!-- /container -->
+</div><!-- /header -->
+
+
+
+<div class="contents width-keeper">
+<div class="container">
+
+    <div>
+      <h2>厨房でした</h2>
+        <p>
+            <br>
+            <img alt="" src="tai.png"><br>
+            <br>
+            老舗の天然鯛焼きをどうぞ！ 
+        </p>
+    </div>
+
+</div><!-- /container -->
+</div><!-- /contents -->
+
+
+<div class="footer">
+<div class="container width-keeper">
+
+	<div class="copyright">
+        <p>&copy; 厨房でした</p>
+    </div>
+
+</div><!-- /container -->
+</div><!-- /footer -->
+
 </body>
 </html>
